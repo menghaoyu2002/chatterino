@@ -1,5 +1,5 @@
 {
-  "name": "someonetalktomeimsolonely",
+  "name": "chatterino",
   "version": "1.0.0",
   "description": "learning how to create a basic chat app with socket.io",
   "main": "index.js",
