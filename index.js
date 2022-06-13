@@ -1,11 +1,26 @@
-const express = require("express");
-const { Server } = require("socket.io");
+const express = require('express');
+const { Server } = require('socket.io');
+const { createServer } = require('http');
 
 const app = express();
-const io = new Server(httpServer, { /* options */ });
+const httpServer = createServer(app);
+const io = new Server(httpServer);
 
-io.on("connection", (socket) => {
-  console.log('a user connected');
+app.use(express.static(__dirname + '/public'));
+
+io.use((socket, next) => {
+    const username = socket.handshake.auth.username;
+    if (!username) {
+        return next(new Error('invalid username'));
+    }
+    socket.username = username;
+    next();
 });
 
-app.listen(3000);
+io.on('connection', (socket) => {
+    console.log(`user ${socket.username} connected`);
+});
+
+httpServer.listen(3000, () => {
+    console.log('listening on port 3000');
+});
