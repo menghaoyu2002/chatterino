@@ -1,0 +1,25 @@
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.options button {
+    display: block;
+    min-width: 50%;
+    padding: 0.5%;
+    border-color: #04528a;
+    background-color: #2b96cf;
+    border-style: solid;
+    font-family: 'Corben', cursive;
+    margin: 1%;
+    color: white;
+    font-size: 2em;
+}
+
+.options button:hover {
+    background-color: #04528a;
+}
