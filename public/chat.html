@@ -9,16 +9,18 @@
         <link rel="stylesheet" href="./styles/chat.css" />
         <script src="./scripts/utils.js"></script>
         <script src="/socket.io/socket.io.js"></script>
-        <script src="./scripts/chatController.js"></script>
     </head>
     <body>
-        <script src="./scripts/chat.js" async defer></script>
-    </body>
-    <div>
         <h1></h1>
         <div class="chatContainer">
-            <div>This will be the chat</div>
-            <div>This will be the entry box</div>
+            <ul class="chat">
+                <li class="welcomeMessage">Welcome to the chat!</li>
+            </ul>
+            <form class="messageEntry">
+                <input type="text" placeholder="start typing a message" />
+                <button>Send</button>
+            </form>
         </div>
-    </div>
+        <script src="./scripts/chat.js" async defer></script>
+    </body>
 </html>

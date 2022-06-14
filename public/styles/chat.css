@@ -1,15 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Varela+Round&display=swap&display=swap');
 
 body {
     background-color: #3ab2cd;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Corben', cursive;
+    scroll-behavior: smooth;
 }
 
 h1 {
+    /* margin: 0 auto;
+    width: 50%; */
+    font-size: 1.2em;
     text-shadow: -1px -1px 0 #04528a, 1px -1px 0 #04528a, -1px 1px 0 #04528a,
         1px 1px 0 #04528a;
+    padding-left: 2%;
+}
+.chatContainer {
+    font-family: 'Varela Round', sans-serif;
+    color: #245272;
+}
+
+.chat {
+    height: 65vh;
+    width: 95%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1%;
+    list-style-type: none;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.messageEntry {
+    margin-top: 1%;
+    padding: 1.1%;
+    display: flex;
+    min-height: 8vh;
+}
+
+.messageEntry input {
+    font-family: 'Varela Round', sans-serif;
+    flex: 20;
+}
+
+.messageEntry button {
+    font-family: 'Corben', cursive;
+    color: #245272;
+    background-color: #c3e6ff;
+    border: solid #4b96cb;
+    flex: 1;
+}
+
+.messageEntry button:hover {
+    background-color: #7cc8ff;
+    border: solid #245272;
+}
+
+.welcomeMessage {
+    font-weight: bolder;
+    margin-bottom: 1%;
 }

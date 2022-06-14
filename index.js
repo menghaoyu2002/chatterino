@@ -40,6 +40,14 @@ io.on('connection', (socket) => {
     socket.join(socket.roomid);
     console.log(`user ${socket.username} joined room ${socket.roomid}`);
 
+    socket.on('message_sent', (message) => {
+        console.log(`user ${socket.username} said ${message}`);
+        io.to(socket.roomid).emit('message', {
+            message,
+            from: socket.username,
+        });
+    });
+
     socket.on('disconnect', () => {
         console.log(`user ${socket.username} disconnected`);
     });
