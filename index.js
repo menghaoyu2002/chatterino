@@ -26,8 +26,19 @@ io.use((socket, next) => {
     next();
 });
 
+io.use((socket, next) => {
+    socket.roomid = socket.handshake.auth.roomid;
+    if (!socket.roomid) {
+        socket.roomid = socket.id;
+    }
+    next();
+});
+
 io.on('connection', (socket) => {
     console.log(`user ${socket.username} connected`);
+
+    socket.join(socket.roomid);
+    console.log(`user ${socket.username} joined room ${socket.roomid}`);
 
     socket.on('disconnect', (reason) => {
         console.log(`user ${socket.username} disconnected`);
