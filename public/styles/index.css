@@ -12,15 +12,13 @@ body {
 h1 {
     font-size: 5em;
     margin-top: 25vh;
-}
-
-h2 {
-    font-size: 1.2em;
+    text-shadow: -2px -2px 0 #04528a, 2px -2px 0 #04528a, -2px 2px 0 #04528a,
+        2px 2px 0 #04528a;
 }
 
 input {
     font-family: 'Corben', cursive;
-    color: black;
+    color: #04528a;
     background-color: white;
     padding: 0.5%;
 }

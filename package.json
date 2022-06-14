@@ -1,27 +1,27 @@
 {
-  "name": "chatterino",
-  "version": "1.0.0",
-  "description": "learning how to create a basic chat app with socket.io",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/menghaoyu2002/someonetalktomeimsolonely.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/menghaoyu2002/someonetalktomeimsolonely/issues"
-  },
-  "homepage": "https://github.com/menghaoyu2002/someonetalktomeimsolonely#readme",
-  "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.16",
-    "socket.io": "^4.5.0",
-    "socket.io-client": "^4.5.1"
-  }
+    "name": "chatterino",
+    "version": "1.0.0",
+    "description": "learning how to create a basic chat app with socket.io",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/menghaoyu2002/someonetalktomeimsolonely.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/menghaoyu2002/someonetalktomeimsolonely/issues"
+    },
+    "homepage": "https://github.com/menghaoyu2002/someonetalktomeimsolonely#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "nodemon": "^2.0.16",
+        "socket.io": "^4.5.0",
+        "socket.io-client": "^4.5.1"
+    }
 }
