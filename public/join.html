@@ -12,15 +12,17 @@
     <body>
         <div class="container">
             <h1>Hi</h1>
+            <button class="changeName">Change Name</button>
             <div class="options">
                 <button>Join</button>
                 <button>Create</button>
             </div>
-            <form style="display: none">
+            <form style="display: none" autocomplete="off">
+                <input type="submit" value="Back" />
                 <input type="text" placeholder="Enter the Room Code" />
                 <input type="submit" value="Go" />
             </form>
         </div>
-        <script src="./scripts/join.js"></script>
+        <script src="./scripts/join.js" async defer></script>
     </body>
 </html>
