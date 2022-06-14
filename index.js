@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
     socket.join(socket.roomid);
     console.log(`user ${socket.username} joined room ${socket.roomid}`);
 
-    socket.on('disconnect', (reason) => {
+    socket.on('disconnect', () => {
         console.log(`user ${socket.username} disconnected`);
     });
 });

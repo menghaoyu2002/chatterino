@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap');
+
+body {
+    background-color: #3ab2cd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Corben', cursive;
+}
+
+h1 {
+    text-shadow: -1px -1px 0 #04528a, 1px -1px 0 #04528a, -1px 1px 0 #04528a,
+        1px 1px 0 #04528a;
+}
